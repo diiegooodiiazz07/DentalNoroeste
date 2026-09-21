@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salud Dental Noroeste | Tu Dentista en San Isidro, Gáldar</title>
+  <meta name="description" content="Clínica dental de confianza en San Isidro (Gáldar). Odontología preventiva, ortodoncia, implantes y estética dental con tecnología avanzada.">
+
+  <!-- Google Fonts & Tailwind -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              navy: '#2B629B',
+              navyDark: '#1E4B7A',
+              lightBlue: '#85C3E8',
+              ice: '#F0F7FC',
+              dark: '#0F1E2E'
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .chat-bubble-user {
+      background-color: #2B629B;
+      color: white;
+      border-radius: 18px 18px 4px 18px;
+    }
+    .chat-bubble-bot {
+      background-color: #F0F7FC;
+      color: #0F1E2E;
+      border: 1px solid #E2EDF5;
+      border-radius: 18px 18px 18px 4px;
+    }
+  </style>
+</head>
+<body class="bg-white text-slate-800 font-sans antialiased selection:bg-brand-navy selection:text-white">
+
+  <!-- Top bar info -->
+  <div class="bg-brand-navy text-white text-xs sm:text-sm py-2 px-4">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div class="flex items-center gap-4">
+        <span><i class="fa-solid fa-location-dot text-brand-lightBlue mr-1"></i> Ctra. General, 43, San Isidro (Gáldar)</span>
+        <span class="hidden md:inline"><i class="fa-regular fa-clock text-brand-lightBlue mr-1"></i> L-V: 9:00 - 20:00 (Ininterrumpido)</span>
+      </div>
+      <a href="tel:928551601" class="font-bold hover:text-brand-lightBlue transition-colors">
+        <i class="fa-solid fa-phone mr-1"></i> 928 55 16 01
+      </a>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 h-20 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-11 h-11 bg-brand-ice rounded-xl border border-brand-lightBlue/50 flex items-center justify-center text-brand-navy font-black text-xl shadow-sm">
+          <i class="fa-solid fa-tooth"></i>
+        </div>
+        <div>
+          <span class="block text-lg font-black tracking-tight text-brand-navy leading-none uppercase">Salud Dental</span>
+          <span class="block text-xs font-bold tracking-widest text-brand-lightBlue uppercase">Noroeste · Gáldar</span>
+        </div>
+      </div>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-600">
+        <a href="#tratamientos" class="hover:text-brand-navy transition-colors">Tratamientos</a>
+        <a href="#clinica" class="hover:text-brand-navy transition-colors">La Clínica</a>
+        <a href="#asistente" class="hover:text-brand-navy transition-colors">Asistente Virtual</a>
+        <a href="#contacto" class="hover:text-brand-navy transition-colors">Ubicación</a>
+      </nav>
+
+      <a href="tel:928551601" class="bg-brand-navy hover:bg-brand-navyDark text-white px-5 py-2.5 rounded-full font-bold text-sm shadow-md transition-all">
+        Pedir Cita
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative bg-gradient-to-b from-brand-ice/60 to-white py-16 lg:py-24 overflow-hidden">
+    <div class="max-w-6xl mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <div class="inline-flex items-center gap-2 bg-brand-lightBlue/20 text-brand-navy font-bold text-xs px-3.5 py-1.5 rounded-full mb-6">
+          <i class="fa-solid fa-star text-amber-500"></i>
+          <span>4.3/5 en Google · Clínica dental en San Isidro</span>
+        </div>
+        <h1 class="text-4xl sm:text-5xl font-extrabold text-brand-dark leading-tight tracking-tight mb-6">
+          Tu salud bucodental en <span class="text-brand-navy">Gáldar</span>, en las mejores manos.
+        </h1>
+        <p class="text-slate-600 text-lg leading-relaxed mb-8">
+          Odontología preventiva, implantología avanzada y estética dental con atención cercana y horario ininterrumpido de 9:00 a 20:00 h en San Isidro.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="tel:928551601" class="bg-brand-navy hover:bg-brand-navyDark text-white font-bold px-7 py-3.5 rounded-xl shadow-lg shadow-brand-navy/20 flex items-center justify-center gap-2 transition-all">
+            <i class="fa-solid fa-phone"></i> Llamar al 928 55 16 01
+          </a>
+          <a href="#asistente" class="bg-white hover:bg-slate-50 text-brand-navy font-bold px-7 py-3.5 rounded-xl border border-brand-lightBlue/60 flex items-center justify-center gap-2 transition-all">
+            <i class="fa-solid fa-comments text-brand-lightBlue"></i> Consultar Asistente Online
+          </a>
+        </div>
+      </div>
+
+      <div class="relative">
+        <div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-slate-100 aspect-[4/3]">
+          <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1200&q=80" alt="Instalaciones dentales" class="w-full h-full object-cover">
+        </div>
+        <div class="absolute -bottom-6 -left-6 bg-white p-5 rounded-2xl shadow-xl border border-slate-100 flex items-center gap-4">
+          <div class="w-12 h-12 rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center text-xl font-bold">
+            <i class="fa-solid fa-clock"></i>
+          </div>
+          <div>
+            <span class="block text-xs font-semibold text-slate-500 uppercase">Horario sin pausas</span>
+            <span class="block text-sm font-extrabold text-brand-dark">Lunes a Viernes 9h - 20h</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tratamientos -->
+  <section id="tratamientos" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-brand-navy font-extrabold text-xs uppercase tracking-widest block mb-2">Servicios Integrales</span>
+        <h2 class="text-3xl font-extrabold text-brand-dark">Cuidado experto para cada sonrisa</h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="p-6 rounded-2xl bg-brand-ice/40 border border-slate-100 hover:border-brand-lightBlue transition-all">
+          <div class="w-12 h-12 bg-brand-navy text-white rounded-xl flex items-center justify-center text-lg mb-4">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <h3 class="text-lg font-bold text-brand-dark mb-2">Odontología Preventiva</h3>
+          <p class="text-slate-600 text-sm">Limpiezas profundas, revisiones y empastes con enfoque conservador para proteger tus piezas naturales.</p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-brand-ice/40 border border-slate-100 hover:border-brand-lightBlue transition-all">
+          <div class="w-12 h-12 bg-brand-navy text-white rounded-xl flex items-center justify-center text-lg mb-4">
+            <i class="fa-solid fa-arrows-split-up-and-left"></i>
+          </div>
+          <h3 class="text-lg font-bold text-brand-dark mb-2">Ortodoncia</h3>
+          <p class="text-slate-600 text-sm">Alineación dental mediante brackets tradicionales y ortodoncia invisible para corregir mordida y estética.</p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-brand-ice/40 border border-slate-100 hover:border-brand-lightBlue transition-all">
+          <div class="w-12 h-12 bg-brand-navy text-white rounded-xl flex items-center justify-center text-lg mb-4">
+            <i class="fa-solid fa-screwdriver"></i>
+          </div>
+          <h3 class="text-lg font-bold text-brand-dark mb-2">Implantología</h3>
+          <p class="text-slate-600 text-sm">Reposición de dientes perdidos con implantes biocompatibles y prótesis fijas de alta durabilidad.</p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-brand-ice/40 border border-slate-100 hover:border-brand-lightBlue transition-all">
+          <div class="w-12 h-12 bg-brand-navy text-white rounded-xl flex items-center justify-center text-lg mb-4">
+            <i class="fa-solid fa-sparkles"></i>
+          </div>
+          <h3 class="text-lg font-bold text-brand-dark mb-2">Estética Dental</h3>
+          <p class="text-slate-600 text-sm">Blanqueamientos clínicos y carillas para devolver el brillo y armonía a tu boca de manera natural.</p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-brand-ice/40 border border-slate-100 hover:border-brand-lightBlue transition-all">
+          <div class="w-12 h-12 bg-brand-navy text-white rounded-xl flex items-center justify-center text-lg mb-4">
+            <i class="fa-solid fa-disease"></i>
+          </div>
+          <h3 class="text-lg font-bold text-brand-dark mb-2">Periodoncia</h3>
+          <p class="text-slate-600 text-sm">Tratamiento de encías inflamadas, sangrado y periodontitis para asegurar la base de tu dentadura.</p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-brand-ice/40 border border-slate-100 hover:border-brand-lightBlue transition-all">
+          <div class="w-12 h-12 bg-brand-navy text-white rounded-xl flex items-center justify-center text-lg mb-4">
+            <i class="fa-solid fa-heart-pulse"></i>
+          </div>
+          <h3 class="text-lg font-bold text-brand-dark mb-2">Endodoncia</h3>
+          <p class="text-slate-600 text-sm">Desinfección de conductos radiculares para salvar piezas infectadas evitando su extracción definitiva.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Demo Asistente Virtual Interactivo -->
+  <section id="asistente" class="py-20 bg-slate-50 border-y border-slate-100">
+    <div class="max-w-4xl mx-auto px-4">
+      <div class="text-center mb-10">
+        <span class="inline-flex items-center gap-1.5 bg-emerald-100 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full mb-3">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> Sistema Inteligente Demostrativo
+        </span>
+        <h2 class="text-3xl font-extrabold text-brand-dark">Asistente Virtual 24/7</h2>
+        <p class="text-slate-500 text-sm mt-2">Haz clic en una consulta rápida para ver cómo atiende a los pacientes:</p>
+      </div>
+
+      <!-- Chat Mockup -->
+      <div class="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden max-w-lg mx-auto">
+        <div class="bg-brand-navy p-4 flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center text-white font-bold">
+            <i class="fa-solid fa-robot"></i>
+          </div>
+          <div>
+            <h4 class="text-white text-sm font-bold">Recepción Virtual · Noroeste</h4>
+            <span class="text-brand-lightBlue text-xs">Responde al instante</span>
+          </div>
+        </div>
+
+        <div id="chat-window" class="p-4 h-80 overflow-y-auto space-y-3 bg-white text-sm">
+          <div class="chat-bubble-bot p-3 max-w-[85%]">
+            ¡Hola! 👋 Soy el asistente virtual de <strong>Salud Dental Noroeste</strong> en San Isidro (Gáldar). ¿En qué podemos ayudarte hoy?
+          </div>
+        </div>
+
+        <!-- Quick actions buttons -->
+        <div class="p-3 bg-slate-50 border-t border-slate-100 flex flex-wrap gap-2 text-xs">
+          <button onclick="handleBotQuery('horarios')" class="bg-white hover:bg-brand-ice border border-slate-200 text-brand-navy font-semibold px-3 py-1.5 rounded-full transition-all">
+            🕒 ¿Qué horario tienen?
+          </button>
+          <button onclick="handleBotQuery('ubicacion')" class="bg-white hover:bg-brand-ice border border-slate-200 text-brand-navy font-semibold px-3 py-1.5 rounded-full transition-all">
+            📍 ¿Dónde están ubicados?
+          </button>
+          <button onclick="handleBotQuery('cita')" class="bg-white hover:bg-brand-ice border border-slate-200 text-brand-navy font-semibold px-3 py-1.5 rounded-full transition-all">
+            📅 Quiero pedir una cita
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ubicación & Datos Ficha -->
+  <section id="contacto" class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-8 text-center">
+      <div class="p-6 rounded-2xl bg-brand-ice/30">
+        <i class="fa-solid fa-map-location-dot text-2xl text-brand-navy mb-3"></i>
+        <h4 class="font-bold text-brand-dark mb-1">Dirección</h4>
+        <p class="text-slate-600 text-sm">Ctra. General, 43, 35488 San Isidro, Gáldar (Las Palmas)</p>
+      </div>
+
+      <div class="p-6 rounded-2xl bg-brand-ice/30">
+        <i class="fa-solid fa-phone-volume text-2xl text-brand-navy mb-3"></i>
+        <h4 class="font-bold text-brand-dark mb-1">Teléfono Directo</h4>
+        <p class="text-slate-600 text-sm">928 55 16 01</p>
+      </div>
+
+      <div class="p-6 rounded-2xl bg-brand-ice/30">
+        <i class="fa-solid fa-calendar-check text-2xl text-brand-navy mb-3"></i>
+        <h4 class="font-bold text-brand-dark mb-1">Jornada Continuada</h4>
+        <p class="text-slate-600 text-sm">L-V: 9:00 a 20:00 h<br>Sábados: 10:00 a 13:00 h</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-brand-dark text-slate-400 py-8 text-xs text-center border-t border-slate-800">
+    <div class="max-w-6xl mx-auto px-4">
+      <p class="mb-2">Propuesta de diseño web y automatización para Salud Dental Noroeste (San Isidro, Gáldar).</p>
+      <p>© 2026 Salud Dental Noroeste. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    function handleBotQuery(type) {
+      const chat = document.getElementById('chat-window');
+      
+      const responses = {
+        horarios: {
+          user: "¿Qué horario tienen?",
+          bot: "Atendemos de forma ininterrumpida de <strong>Lunes a Viernes de 9:00 a 20:00</strong>, y los <strong>Sábados de 10:00 a 13:00</strong>. ¡No cerramos a mediodía!"
+        },
+        ubicacion: {
+          user: "¿Dónde están ubicados?",
+          bot: "Nos encontramos en <strong>Ctra. General, 43, en San Isidro (Gáldar)</strong>. Dispones de fácil acceso y aparcamiento en la zona."
+        },
+        cita: {
+          user: "Quiero pedir una cita",
+          bot: "¡Con gusto! Puedes llamarnos directamente al <strong><a href='tel:928551601' class='text-brand-navy underline font-bold'>928 55 16 01</a></strong> para que te asignemos el hueco que mejor te convenga."
+        }
+      };
+
+      const selected = responses[type];
+      
+      chat.innerHTML += `<div class="chat-bubble-user p-3 max-w-[80%] ml-auto text-right">${selected.user}</div>`;
+      setTimeout(() => {
+        chat.innerHTML += `<div class="chat-bubble-bot p-3 max-w-[85%]">${selected.bot}</div>`;
+        chat.scrollTop = chat.scrollHeight;
+      }, 350);
+    }
+  </script>
+</body>
+</html>
